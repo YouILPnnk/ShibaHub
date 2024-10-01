@@ -7,7 +7,7 @@ local v1 = game.Players.LocalPlayer
 		v:WaitForChild("Background").Visible = false
 		v:WaitForChild("Amount").Position = UDim2.fromScale(-2,-10.8)
 	end)
-end]]--
+end
 
 local function FastMode()
 	for _,v in pairs(game.Workspace:GetDescendants()) do
@@ -23,6 +23,6 @@ local function ExtraFastMode()
 			v.Color = Color3.fromRGB(150,150,150)
 		end
 	end
-end
+end]]--
 
 print(game.Players.LocalPlayer.Name)
