@@ -1,5 +1,3 @@
-local v1 = game.Players.LocalPlayer
-
 --[[local function GoldText()
 	pcall(function()
 		local v = v1.PlayerGui:WaitForChild("GoldGui"):WaitForChild("Frame")
