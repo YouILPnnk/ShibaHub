@@ -45,7 +45,7 @@ end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib(HubName, "Ocean")
+local Window = Library.CreateLib(tostring(HubName), "Ocean")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main function")
 Section:NewToggle("AutoFarm", "", function(state)
