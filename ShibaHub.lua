@@ -1,6 +1,5 @@
-local _G.AutoFarm = false
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+_G.AutoFarm = false
 local Window = Library.CreateLib("ShibaHub", "Synapse")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main function")
