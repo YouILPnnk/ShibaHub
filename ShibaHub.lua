@@ -1,24 +1,5 @@
 _G.AutoFarm = false
-
-spawn(function()
-    while wait(5) do
-        HubName = "S"
-        wait(0.25)
-        HubName = "Sh"
-        wait(0.25)
-        HubName = "Shi"
-        wait(0.25)
-        HubName = "Shib"
-        wait(0.25)
-        HubName = "Shiba"
-        wait(0.25)
-        HubName = "Shiba H"
-        wait(0.25)
-        HubName = "Shiba Hu"
-        wait(0.25)
-        HubName = "Shiba Hub"
-    end
-end)
+HubName = "ShibaHub"
 
 local function Tweenfunc(p)
     local HumanoidRootPart = game.Players.LocalPlayer.HumanoidRootPart
@@ -48,7 +29,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib(tostring(HubName), "Ocean")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main function")
-Section:NewToggle("AutoFarm", "", function(state)
+Section:NewToggle("AutoFarm", "AutoFarm is ".._G.AutoFarm, function(state)
     if state then
         _G.AutoFarm = true
     else
