@@ -7,14 +7,14 @@ local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main function")
 Section:NewToggle("AutoFarm", "", function(state)
     if state then
-        _G.AutoFarm = false
-    else
         _G.AutoFarm = true
+    else
+        _G.AutoFarm = false
     end
 end)
 spawn(function()
    while task.wait() do
-        if _G.AutoFarm == false then
+        if _G.AutoFarm == true then
            print("A")
         else
            return
