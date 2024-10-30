@@ -1,4 +1,4 @@
-local _G.AutoFarm = false
+_G.AutoFarm = true
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
@@ -7,14 +7,14 @@ local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main function")
     Section:NewToggle("AutoFarm", "AutoFarm is "..tostring(_G.AutoFarm), function(state)
         if state then
-            _G.AutoFarm = true
-        else
             _G.AutoFarm = false
+        else
+            _G.AutoFarm = true
         end
     end)
  spawn(function()
     while task.wait() do
-        if _G.AutoFarm = true then
+        if _G.AutoFarm = false then
             print("A")
         else
             print("B")
