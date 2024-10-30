@@ -1,4 +1,8 @@
 _G.AutoFarm = false
+_G.ChestFarm = false
+_G.FastAttack = false
+_G.AutoRandomFruit = false
+
 HubName = "ShibaHub"
 
 local function Tweenfunc(p)
