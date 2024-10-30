@@ -17,7 +17,7 @@ spawn(function()
         if _G.AutoFarm = false then
            print("A")
         else
-           print("B")
+           return
         end
     end
 end)
