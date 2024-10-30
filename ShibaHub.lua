@@ -14,7 +14,7 @@ Section:NewToggle("AutoFarm", "", function(state)
 end)
 spawn(function()
    while task.wait() do
-        if _G.AutoFarm = false then
+        if _G.AutoFarm == false then
            print("A")
         else
            return
