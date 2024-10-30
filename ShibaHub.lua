@@ -29,7 +29,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib(tostring(HubName), "Ocean")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main function")
-Section:NewToggle("AutoFarm", "AutoFarm is ".._G.AutoFarm, function(state)
+Section:NewToggle("AutoFarm", "", function(state)
     if state then
         _G.AutoFarm = true
     else
