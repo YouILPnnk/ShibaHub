@@ -139,10 +139,10 @@ end)
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 
 function Kavo:ToggleUI()
-    if game.CoreGui[LibName].Enabled then
-        game.CoreGui[LibName].Enabled = false
+    if game.ScreenGui[LibName].Enabled then
+        game.ScreenGui[LibName].Enabled = false
     else
-        game.CoreGui[LibName].Enabled = true
+        game.ScreenGui[LibName].Enabled = true
     end
 end
 
@@ -221,7 +221,7 @@ function Kavo.CreateLib(kavName, themeList)
     blurFrame.Size = UDim2.new(0, 376, 0, 289)
     blurFrame.ZIndex = 999
 
-    ScreenGui.Parent = game.Players.LocalPlayer.PlayerGui
+    ScreenGui.Parent = game.ScreenGui
     ScreenGui.Name = LibName
     ScreenGui.Active = true
     ScreenGui.ZIndex = 1000
