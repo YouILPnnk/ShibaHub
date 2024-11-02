@@ -10,7 +10,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("ShibaHub : Build A Boat", "GrapeTheme")
 local Tab = Window:NewTab("General")
 local Section = Tab:NewSection("Main")
-local Section1 = Tab:NewSection("Tool")
 Section:NewToggle("AutoFarm", "Version :  0", function(state)
     if state then
         _G.AutoFarm = true
