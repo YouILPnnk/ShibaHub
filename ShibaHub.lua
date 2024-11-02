@@ -1,13 +1,13 @@
 _G.AutoFarm = false
 _G.AutoBuyTool = false
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("ShibaHub : Build A Boat", "GrapeTheme")
-local function MobileSupport()
+--[[local function MobileSupport()
     local M = game.CoreGui.LibName.Main
     M.Active = true
-end
-MobileSupport()
+end]]--
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("ShibaHub : Build A Boat", "GrapeTheme")
 local Tab = Window:NewTab("General")
 local Section = Tab:NewSection("Main")
 local Section1 = Tab:NewSection("Tool")
