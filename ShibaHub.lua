@@ -24,3 +24,4 @@ Section:NewToggle("AutoBuyTool", "Version :  0", function(state)
         _G.AutoBuyTool = false
     end
 end)
+print("Beta")
