@@ -28,8 +28,3 @@ end)
 Section1:NewButton("1", "", function()
     print("Clicked")
 end)
-for theme, color in pairs(themes) do
-    Section:NewColorPicker(theme, "Change your "..theme, color, function(color3)
-        Library:ChangeColor(theme, color3)
-    end)
-end
