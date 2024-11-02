@@ -72,7 +72,6 @@ do
     Toggle:OnChanged(function()
         print("Toggle changed:", Options.MyToggle.Value)
         _G.AutoFarm = true
-        print(tostring(_G.AutoFarm.Value))
     end)
 
     Options.MyToggle:SetValue(false)
