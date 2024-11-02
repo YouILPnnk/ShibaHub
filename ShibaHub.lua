@@ -8,7 +8,6 @@ end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("ShibaHub : Build A Boat", "GrapeTheme")
-wait(1)
 MobileSupport()
 local Tab = Window:NewTab("General")
 local Section = Tab:NewSection("Main")
