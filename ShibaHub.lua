@@ -29,4 +29,3 @@ Section:NewToggle("AutoBuyTool", "Version :  0", function(state)
     end
 end)
 MobileSupport()
-print("Beta.1")
