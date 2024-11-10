@@ -58,20 +58,22 @@ end)
 MobileSupport()
 
 spawn(function()
-    while task.wait() do
-        if _G.AutoBuyTool == true then
-            AutoBuyTool()
-        else
-            return
+    pcall(function()
+        while task.wait() do
+            if _G.AutoBuyTool == true then
+                AutoBuyTool()
+            else
+            end
         end
-    end
+    end)
 end)
 spawn(function()
-    while task.wait() do
-        if _G.AutoFarm == true then
-            print("Run")
-        else
-            return
+    pcall(function()
+        while task.wait() do
+            if _G.AutoFarm == true then
+                print("Run")
+            else
+            end
         end
-    end
+    end)
 end)
